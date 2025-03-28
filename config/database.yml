@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: sergiomaia
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: hub_backend_development
+
+test:
+  <<: *default
+  database: hub_backend_test
+
+production:
+  <<: *default
+  database: hub_backend_production

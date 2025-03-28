@@ -130,6 +130,8 @@ GEM
     marcel (1.0.4)
     mini_mime (1.1.5)
     minitest (5.25.5)
+    mocha (2.7.1)
+      ruby2_keywords (>= 0.0.5)
     msgpack (1.8.0)
     net-imap (0.5.6)
       date
@@ -251,7 +253,14 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
+    ruby2_keywords (0.0.5)
     securerandom (0.4.1)
+    sorbet (0.5.11965)
+      sorbet-static (= 0.5.11965)
+    sorbet-runtime (0.5.11965)
+    sorbet-static (0.5.11965-aarch64-linux)
+    sorbet-static (0.5.11965-universal-darwin)
+    sorbet-static (0.5.11965-x86_64-linux)
     sshkit (1.24.0)
       base64
       logger
@@ -295,12 +304,16 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
+  connection_pool
   debug
   kamal
+  mocha
   pg
   puma (>= 5.0)
   rails (~> 8.0.2)
   rubocop-rails-omakase
+  sorbet
+  sorbet-runtime
   thruster
   tzinfo-data
 
